@@ -68,7 +68,7 @@ test_y_ = regr.predict(test_x)
 
 print("Mean Absolute Error:  %.2f" % np.mean(np.absolute(test_y_ - test_y)))
 print("Redisual sum of squares (MSE): %.2f" % np.mean((test_y_ - test_y)**2))
-print("Mean Absolute Error: %.2f" % r2_score(test_y, test_y_))
+print("r2 score: %.2f" % r2_score(test_y, test_y_))
 
 
 def predict_col(engine_size):
